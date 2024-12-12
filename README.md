@@ -12,14 +12,12 @@ The repository includes training, testing, and analysis scripts, along with help
 ## Repository Structure
 
 ### Folders and Files
-- `DRL7-1.ipynb`: Training code for DRL-based portfolio optimization (single period).
-- `DRL7-2.ipynb`: Training and testing DRL portfolios over multiple periods.
-- `DRL_test7.ipynb`: Testing and analysis of DRL-based portfolio performance.
-- `DRL_test7-1.ipynb`: Advanced testing with multiple models and performance comparison.
-- `DRL_test7-2.ipynb`: Testing code with visualization for portfolio allocations and cumulative returns.
-- `rolling_markowitz_window.ipynb`: Implementation of traditional rolling **Markowitz Portfolio**.
-- `saved_models/`: Directory to store trained models for each period.
-- `stats/`: Folder containing exported `.npy` files for portfolio returns and weight histories.
+- `DRL_init_train.ipynb`: Training code for DRL-based portfolio optimization (base single period).
+- `DRL_forward.ipynb`: Training DRL portfolios for walk-forward periods.
+- `DRL_all_test.ipynb`: Testing and analysis of DRL-based portfolio performance for all periods.
+- `DRL_init_test.ipynb`: Testing code with visualization for portfolio allocations and cumulative returns of base period.
+- `DRL_test7-2.ipynb`: Testing code with visualization for portfolio allocations and cumulative returns for walk-forward periods.
+- `rolling_markowitz_window.ipynb`: Implementation of traditional rolling **Markowitz Portfolio**, **Minimum Variance Portfolio**, **Equal Weight Portfolio**
 
 ---
 
@@ -40,11 +38,8 @@ The repository includes training, testing, and analysis scripts, along with help
 4. **Comprehensive Visualization**:
    - Stacked area plots for portfolio allocations.
    - Cumulative return plots comparing DRL to benchmarks.
-   - Metrics table exported as **LaTeX**.
 
 ---
-
-## Usage
 
 ### Prerequisites
 - Python 3.8+
@@ -55,7 +50,3 @@ The repository includes training, testing, and analysis scripts, along with help
   - `pandas`
   - `yfinance`
   - `gym`
-
-Install dependencies:
-```bash
-pip install -r requirements.txt
