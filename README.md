@@ -16,7 +16,7 @@ The repository includes training, testing, and analysis scripts, along with help
 - `DRL_forward.ipynb`: Training DRL portfolios for walk-forward periods.
 - `DRL_all_test.ipynb`: Testing and analysis of DRL-based portfolio performance for all periods.
 - `DRL_init_test.ipynb`: Testing code with visualization for portfolio allocations and cumulative returns of base period.
-- `DRL_test7-2.ipynb`: Testing code with visualization for portfolio allocations and cumulative returns for walk-forward periods.
+- `DRL_forward_test.ipynb`: Testing code with visualization for portfolio allocations and cumulative returns for walk-forward periods.
 - `rolling_markowitz_window.ipynb`: Implementation of traditional rolling **Markowitz Portfolio**, **Minimum Variance Portfolio**, **Equal Weight Portfolio**
 
 ---
